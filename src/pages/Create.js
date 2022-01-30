@@ -12,7 +12,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import { useHistory } from "react-router-dom";
 
-const useStyle = makeStyles({
+const useStyles = makeStyles({
   field: {
     marginTop: 20,
     marginBottom: 20,
@@ -21,7 +21,7 @@ const useStyle = makeStyles({
 });
 
 export default function Create() {
-  const classes = useStyle();
+  const classes = useStyles();
   const history = useHistory();
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
